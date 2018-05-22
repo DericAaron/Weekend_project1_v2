@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Salary Calculator</title>
+    <script src="vendors/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Salary Calculator</h1>
+    </header>
+    <section id="inputArea" class="container">
+      <h3>Add Employee</h3>
+      <input type="text" placeholder="First Name" id="firstIn">
+      <input type="text" placeholder="Last Name" id="lastIn">
+      <input type="text" placeholder="ID" id="idIn">
+      <input type="text" placeholder="Title" id="titleIn">
+      <input type="number" placeholder="Annual Salary" id="salaryIn">
+      <button id="addEmployeeButton" class="btn btn-primary">Submit</button>
+      <div>
+        <span>Monthly Cap (USD):<span>
+        <select id="capSelection">
+          <option value="20000">20000</option>
+          <option value="50000">50000</option>
+          <option value="100000">100000</option>
+          <option value="150000">150000</option>
+          <option value="200000">200000</option>
+        </select>
+      </div>
+      <div id="warningLine">
+
+      </div>
+    </section>
+    <section class="container">
+      <h3>Employees</h3>
+      <div id="tableArea">
+
+      </div>
+      <div id="salaryLine">
+
+      </div>
+    </section>
+
+  </body>
+</html>
